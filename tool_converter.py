@@ -14,11 +14,17 @@ Temperature: 25
 
 def celsius_to_fahrenheit(c):
     """convert Celsius to Fahrenheit."""
-    return round(c * 9 / 5 + 32, 1)
+    resultat = round(c * 9 / 5 + 32, 1)
+    return resultat
 
 def fahrenheit_to_celsius(f):
     """convert Fahrenheit to Celsius."""
     return round((f - 32) * 5 / 9, 1)
+
+user_choice = input("Convert (1) Celsius → Fahrenheit or (2) Fahrenheit → Celsius? ")
+if user_choice == "1":
+    c = float(input("Temperature: "))
+    print(f"{celsius_to_fahrenheit(c)} °C")
 
 if __name__ == "__main__":
     run()
