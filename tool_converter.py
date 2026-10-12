@@ -24,7 +24,10 @@ def fahrenheit_to_celsius(f):
 user_choice = input("Convert (1) Celsius → Fahrenheit or (2) Fahrenheit → Celsius? ")
 if user_choice == "1":
     c = float(input("Temperature: "))
-    print(f"{celsius_to_fahrenheit(c)} °C")
+    print(f"{celsius_to_fahrenheit(c)} °F")
+elif user_choice == "2":
+    f = float(input("Temperature: "))
+    print(f"{fahrenheit_to_celsius(f)} °C")
 
 if __name__ == "__main__":
     run()
