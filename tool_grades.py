@@ -1,4 +1,5 @@
 def run():
+  """ Input a list of grades and display the average, lowest, highest and mention"""
   input_grade = ' '
   grades = []
   while input_grade:
@@ -16,6 +17,13 @@ def run():
   print(f'{len(grades)} grades – average: {sum(grades)/len(grades):.1f} – lowest: {min(grades):.1f} – highest: {max(grades):.1f}\nMention: {get_mention(grades)}')
   
 def get_mention(grades: list) -> str:
+  """
+  Get the mention of a list of grades
+
+  :param grades: the list of grades
+  :return: the resulting mention
+  """
+  
   average = sum(grades)/len(grades)
   if average > 15:
     return 'Very Good'
