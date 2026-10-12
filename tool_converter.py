@@ -16,5 +16,9 @@ def celsius_to_fahrenheit(c):
     """convert Celsius to Fahrenheit."""
     return round(c * 9 / 5 + 32, 1)
 
+def fahrenheit_to_celsius(f):
+    """convert Fahrenheit to Celsius."""
+    return round((f - 32) * 5 / 9, 1)
+
 if __name__ == "__main__":
     run()
