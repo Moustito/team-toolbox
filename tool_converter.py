@@ -28,6 +28,8 @@ if user_choice == "1":
 elif user_choice == "2":
     f = float(input("Temperature: "))
     print(f"{fahrenheit_to_celsius(f)} °C")
+else:
+    print("Please, write '1' for Celsius → Fahrenheit or '2' for Fahrenheit → Celsius.")
 
 if __name__ == "__main__":
     run()
