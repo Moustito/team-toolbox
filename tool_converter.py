@@ -16,11 +16,17 @@ def run():
         (0) Quit 
         """)
         if user_choice == "1":
-            c = float(input("Temperature: "))
-            print(f"{celsius_to_fahrenheit(c)} °F")
+            try:
+                c = float(input("Temperature: "))
+                print(f"{celsius_to_fahrenheit(c)} °F")
+            except ValueError:
+                print("Enter a valid temperature !")
         elif user_choice == "2":
-            f = float(input("Temperature: "))
-            print(f"{fahrenheit_to_celsius(f)} °C")
+            try:
+                f = float(input("Temperature: "))
+                print(f"{fahrenheit_to_celsius(f)} °C")
+            except ValueError:
+                print("Enter a valid temperature !")
         elif user_choice == "0":
             break
         else:
