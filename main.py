@@ -1,6 +1,7 @@
 import tool_number_guessing_game
 import tool_converter 
 
+# thi is the menu
 def show_menu():
     """Display the list of available tools."""
     print()
