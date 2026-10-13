@@ -1,7 +1,10 @@
+import tool_grades
+
 def show_menu():
     """Display the list of available tools."""
     print()
     print("=== Team Toolbox ===")
+    print("3. Grades")
     print("0. Quit")
 
 
@@ -13,6 +16,8 @@ def main():
         if choice == "0":
             print("Goodbye!")
             break
+        elif choice == "3":
+            tool_grades.run()
         else:
             print("Invalid choice, try again.")
 
