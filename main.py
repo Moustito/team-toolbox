@@ -1,9 +1,12 @@
+import tool_number_guessing_game
 import tool_converter 
 
+# thi is the menu
 def show_menu():
     """Display the list of available tools."""
     print()
     print("=== Team Toolbox ===")
+    print("2. Number Guessing Game")
     print("1. Temperature converter")
     print("0. Quit")
 
@@ -16,6 +19,8 @@ def main():
         if choice == "0":
             print("Goodbye!")
             break
+        if choice == "2":
+            tool_number_guessing_game.run()
         elif choice == "1":
             tool_converter.run()
         else:
