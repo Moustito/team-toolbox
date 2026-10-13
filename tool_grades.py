@@ -2,7 +2,7 @@ def run():
   """ Input a list of grades and display the average, lowest, highest and mention"""
   input_grade = ' '
   grades = []
-  while input_grade:
+  while True:
     input_text = input("Enter a grade (empty to stop): ")
     if input_text is '':
       break
